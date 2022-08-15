@@ -4,7 +4,7 @@ import {FaCheck, FaTimes} from 'react-icons/fa';
 const List = ({todoList, deleteTodo, finishTodo}) => {
     return todoList.map((value, index) => {
         return (
-            <Card className='mt-3'>
+            <Card className='mt-3' key={index.toString()}>
                 <Card.Body>
                     <Row>
                         {/* Nama Todo */}
